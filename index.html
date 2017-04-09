@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Resume: Manoj Shrestha </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			font-family: "Lucida Sans Unicode", "Lucida Console";
+			
+		}
+		p {
+			font-size: 14px;
+		}
+		.mainDiv {
+			position: relative;
+			max-width: 800px;
+			height: 1132px;
+			margin: auto;
+			padding: 5px;
+		}
+		.sideDiv, .sideDiv div {
+			float: left;
+			width: 250px;
+			height: auto;
+		}
+		#person {
+			background-color: #E7E6E6;
+			text-align: center;
+		}
+		img {
+			width: 170px;
+			height: 190px;
+			margin: 30px 35px 10px 35px;
+			cursor: crosshair;
+		}
+		.centerDiv {
+			float: left;
+			width: 535px;
+			height: 1122px;
+			margin-left: 10px;
+		}
+		.centerDiv div {
+			float: left;
+			width: 535px;
+			text-align: justify;
+		}
+		.topic {
+			color: white;
+			font-weight: bold;
+			background-color: #2E9CB2;
+			text-align: center;
+			padding: 5px;
+			margin-top:0;
+			transition: all 1s;
+		}
+		h1 {
+			text-align: center;
+		}
+		a {
+			position: relative;
+			text-decoration: none;
+			color: black;
+			border-bottom: 1px solid lightgray;
+			transition: all 1s;
+		}
+		a:hover {
+				border-bottom: 1px solid black;
+		}
+		.tooltip {
+					position: absolute;
+					visibility: hidden;
+					width: auto;
+					bottom: 120%;
+					left: 5%;
+					padding: 5px;
+					background-color: black;
+					color: white;
+					border-radius: 5px;
+					opacity: 0;
+					transition: opacity 1s;
+		}
+		.tooltip::before {
+			position: absolute;
+			top: 100%;
+			left: 25%;
+			content: "";
+			border: 5px solid transparent;
+			border-top: 5px solid black;
+		}
+		a:hover .tooltip {
+							visibility: visible;
+							opacity: 1;
+		}
+		#description p {
+			text-align: justify;
+		}
+		.personalSkills article {
+			font-size: 12px;
+			line-height: 1.6;
+			
+		}
+		.personalSkills span{
+			display: inline-block;
+			width: 110px;
+		}
+		.personalSkills i {
+			display: inline-block;
+			width: 10px;
+			height: 13px;
+			margin-right: 2px;
+			background-color: #2E9CB2;
+			transition: all 0.5s;
+		}
+		.personalSkills em {
+			display: inline-block;
+			width: 10px;
+			height: 13px;
+			margin-right: 2px;
+			background-color: lightgray;
+			transition: all 0.5s;
+		}
+		.personalSkills em:hover {
+			background-color: #2E9CB2;
+		}
+		ul {
+			list-style-type: none;
+			font-size: 14px;
+			list-style-position: inside;
+			margin-left: -20px;
+			line-height: 1.6;
+			clear: both;
+		}
+		.centerDiv h4 {
+			display: inline;
+			float: left;
+			margin-top: 3px;
+			margin-bottom: 3px;
+		}
+		.centerDiv h4 i{
+			margin-left: 10px;
+			color: gray;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		.centerDiv h4 i:hover{
+			color: black;
+		}
+		#education a {
+			border: none;
+		}
+		#marksheet1, #marksheet2 {
+			left: -40px;
+			width: 200px;
+			font-family: "Lucida Sans Unicode", "Lucida Console";
+			font-style: normal;
+		}
+		.centerDiv span {
+			float: right;
+			font-size: 14px;
+			font-style: italic;
+		}
+		#work a {
+			clear: both;
+			float: left;
+			margin-bottom: 5px;
+			border-bottom: 1px solid lightgray;
+			color: #2E9CB2;
+			transition: all 1s;
+		}
+		#work a:hover {
+			border-bottom: 1px solid black;
+		}
+		.centerDiv span i {
+			display: block;
+			margin: 5px;
+			text-align: center;
+			font-style: normal;
+			}
+		.last {
+			display: inline-block;
+			background-color: #E7E6E6;
+			text-align: center;
+			padding: 5px;
+			margin-top: -10px;
+		}
+		.last i {
+			display: block;
+			font-size: 12px;
+			font-style: normal;
+		}
+		#changeColor {
+			float: right;
+			display: inline-block;
+			padding: 5px;
+			margin-top: -10px;
+			width: 25px;
+			padding: 0;
+		}
+		#changeColor div {
+			width: 20px;
+			height: 15px;
+			margin-bottom: 4px;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		#changeColor div:hover{
+			width: 25px;
+			height: 20px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<body>
+	<div class="mainDiv">
+		<div class="sideDiv">
+			<div id="person">
+			<img src="http://i65.tinypic.com/ix49d3.jpg" alt="Manoj_Image"/>
+			<p> Name: Manoj Shrestha </p>
+			<p> Age: 26 years, <i class="fa fa-mars fa-lg"></i></p>
+			<p> <i class="fa fa-home fa-lg"></i> Kalanki, Kathmandu </p>
+			<p>	<i class="fa fa-phone-square fa-lg"></i> +9779818079566 </p>
+			<p>	<i class="fa fa-envelope fa-lg"></i>
+				<a href="mailto:jomanozgml@gmail.com" target="_blank"> jomanozgml@gmail.com 
+				<span class="tooltip"> Click to Send Mail </span></a></p>
+			</p>
+			<p> <i class="fa fa-linkedin-square fa-lg"></i>
+				<a href="https://www.linkedin.com/in/manoj-shrestha1237" target="_blank">
+					linkedin.com/in/manoj-shrestha1237
+					<span class="tooltip" style="width:150px;"> Click to view profile </span></a>
+			</p><br/>
+			</div>
+			<div id="description">
+				<p class="topic" style="text-align: center;"> ABOUT ME </p>
+				<p> Honest, Responsible, Dynamic, Loyal are some of the traits
+				that defines me. I am 
+				passionate about programming. I am more of a pessimist than a 
+				optimist but in a positive way. I believe in smart-working rather than hard-working. 
+				And I consider most of animals as friends of human. </p><br/>
+			</div>
+			<div class="personalSkills">
+				<p class="topic skills" style="font-size: 14px"> SKILLS </p>
+				<p style="font-size:14px; font-weight: bold;"> PERSONAL </p>
+				<article class="7"><span> Communication </span></article>
+				<article class="6"><span> Humour </span></article>
+				<article class="6"><span> Creativity </span></article>
+				<article class="8"><span> Problem Solving </span></article>
+				<article class="8"><span> Pressure Handling </span></article>
+				<article class="7"><span> Team Player </span></article>
+				<article class="5"><span> Social </span></article>
+				<p style="font-size:14px; font-weight: bold;"> WORK </p>
+				<article class="6"><span> C,C++ </span></article>
+				<article class="8"><span> HTML, CSS </span></article>
+				<article class="7"><span> JavaScript </span></article>
+				<article class="6"><span> Python </span></article>
+				<article class="5"><span> SQL </span></article>
+				<article class="7"><span> MS Office </span></article>
+				<article class="5"><span> MS Excel </span></article>
+				<article class="6"><span> Photoshop </span></article>
+			</div>
+		</div>
+		<div class="centerDiv">
+			<div id="nameDiv">
+			<h1> Manoj Shrestha </h1>
+			</div>
+			<div id="objDiv">
+			<p class="topic"> CAREER OBJECTIVE </p>
+			<p> To utilize my skills to achieve the goal of the organization while learning new skills and applying them in the field of information technology. </p>
+			<br/></div>
+			<div id="education">
+			<p class="topic"> EDUCATION </p>
+			<h4> Bachelor in Computer Engineering </h4>
+			<span> 2012-2016 </span>
+			<ul>
+			<li> Kathmandu Engineering College (TU Affiliated), Kalimati, Kathmandu </li>
+			<li> Aggregate Exam's score : 70% </li>		
+			</ul>
+			<h4> +2 in Science <a href="https://www.dropbox.com/s/aenktj0w6n7fpgv/plusTwo.jpg?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet1">
+				Click to download Marksheet </span></i></a></h4>
+			<span> 2008-2010 </span>
+			<ul>
+			<li> Jubilant College (HSEB), Kalimati, Kathmandu </li>
+			<li> Aggregate Exam's score : 67% </li>		
+			</ul>
+			<h4> School Leaving Certificate (SLC) <a href="https://www.dropbox.com/s/x7bpxgorfh1ozyx/slc.jpg?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet2">
+				Click to download Marksheet </span></i></a></h4>
+			<span> 1998-2008 </span>
+			<ul>
+			<li> Paropakar Adarsha H.S.S., Bhimsensthan, Kathmandu </li>
+			<li> Aggregate Exam's score : 77% </li>		
+			</ul><br/>
+			<div id="work">
+			<p class="topic"> EXPERIENCE </p>
+			<h4> Newspaper Job Posting Representative </h4><span> Aug 2015- Feb 2016 </span>
+			<a href="http://www.merojob.com" target="_blank" class="color1"> meroJob Dot Com Pvt. Ltd.
+					<span class="tooltip" style="width:280px;">
+						<i style="text-decoration: underline"> Reference:</i>
+						<i> Name: Rajesh Shrestha </i>
+						<i> Position: Senior IT Executive </i>
+						<i> Contact No.: 9801038993, 014106702 </i></span>
+			</a>
+			<ul>
+			<li> This job required me to publish job vacancy published in Newspapers to the website [merojob.com]. I learned about unicode Nepali typing, Optical Character Recognition and team-work. </li>		
+			</ul>
+			<h4> Hawker [cycle boy] </h4><span> Aug 2010- Oct 2012 </span>
+			<a href="http://www.kmg.com.np/" target="_blank" class="color1"> Kantipur Publications Pvt. Ltd.
+					<span class="tooltip">
+						<i style="text-decoration: underline"> Reference:</i>
+						<i> Name: Purna Shrestha </i>
+						<i> Position: Distribution Incharge-Kalanki </i>
+						<i> Contact No.: 9841309990 </i></span>
+			</a>
+			<ul>
+			<li> Job was to deliver newspapers at subscribers home at morning. From this I learned about hard-work, client relationship and responsibility.  </li>		
+			</ul>
+			</div>
+			<div id="projects">
+			<p class="topic"> PROJECTS </p>
+			<h4> BAGHCHAL GAME </h4>
+			<ul>
+			<li> This two-player game is for Windows7 OS written using <i> C++ </i> </li>
+			<li> Minor Project during 2nd year of Engineering </li>		
+			</ul>
+			<h4> OCR APPLICATION </h4>
+			<ul>
+			<li> Optical Character Recognition application for Windows and Linux OS written using <i> Python 2.7 </i> </li>
+			<li> Recognizes English as well as Nepali script in image file and gives an output in editable text format. Major Project </li>	
+			</ul>
+			</div>
+			<div id="reference">
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> meroJob Dot Com </strong></i>
+						<i> Name: Rajesh Shrestha </i>
+						<i> Position: Senior IT Executive </i>
+						<i> Contact No.: 9801038993, 014106702 </i>
+				</p>
+				<p class="last" style="width:230px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> Kantipur Publication </strong></i>
+						<i> Name: Purna Shrestha </i>
+						<i> Position: Distribution Incharge-Kalanki </i>
+						<i> Contact No.: 9841309990 </i>
+				</p>
+				<div id="changeColor">
+					<div class="colorBox" id="MediumPurple" onclick="colorChange(id)"></div>
+					<div class="colorBox" id="SteelBlue" onclick="colorChange(id)"></div>
+					<div class="colorBox" id="ForestGreen" onclick="colorChange(id)"></div>
+					<div class="colorBox" id="IndianRed" onclick="colorChange(id)"></div>
+				</div>
+			</div>
+			
+		</div>		
+	</div>
+	<script>
+		(function (){
+			var i, j, len, n = 0;
+			var x = document.getElementsByTagName("article");
+			n = x.length;
+			var node;
+			for(i=0; i<n; i++){
+				len = Number(x[i].className);
+				for(j=0; j<len; j++){
+					node = document.createElement("I");
+					node.className = "color2";
+					x[i].appendChild(node);
+				}
+				for(j=len; j<10; j++){
+					node = document.createElement("EM");
+					node.className = "color3";
+					x[i].appendChild(node);
+				}
+			}
+		})();
+		(function(){
+			var x = document.getElementsByClassName("colorBox");
+			var i, n = 0;
+			for(i=0; i<4; i++){
+				var color = x[i].id;
+				x[i].style.backgroundColor = color;
+			}
+		})();
+		function colorChange(colorId){
+			var x = document.getElementsByClassName("topic");
+			var y = document.getElementsByClassName("color1");
+			y[0].style.color = colorId;
+			y[1].style.color = colorId;
+			var z = document.getElementsByClassName("color2");
+			var a = [x, z];
+			for (var i=0; i<2; i++){
+				var n = a[i].length;
+				for (var j=0; j<n; j++){
+					a[i][j].style.backgroundColor = colorId;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
