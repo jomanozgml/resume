@@ -217,7 +217,7 @@
 			<div id="person">
 			<img src="http://i65.tinypic.com/ix49d3.jpg" alt="Manoj_Image"/>
 			<p> Name: Manoj Shrestha </p>
-			<p> Age: 26 years, <i class="fa fa-mars fa-lg"></i></p>
+			<p> Age: <span id="age"> </span> years, <i class="fa fa-mars fa-lg"></i></p>
 			<p> <i class="fa fa-home fa-lg"></i> Kalanki, Kathmandu </p>
 			<p>	<i class="fa fa-phone-square fa-lg"></i> +9779818079566 </p>
 			<p>	<i class="fa fa-envelope fa-lg"></i>
@@ -381,6 +381,11 @@
 				var color = x[i].id;
 				x[i].style.backgroundColor = color;
 			}
+			//Date Of Birth [Age]
+			var d = new Date();
+			var bd = new Date(1990, 10, 15); // Month from 0-11 [November=10]
+			var fd = new Date(d-bd);
+			document.getElementById("age").innerHTML = parseInt(fd/(1000*60*60*24*365));
 		})();
 		function colorChange(colorId){
 			var x = document.getElementsByClassName("topic");
