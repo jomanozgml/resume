@@ -18,6 +18,7 @@
 			height: 1132px;
 			margin: auto;
 			padding: 5px;
+			<!--border: 2px solid lightgray;-->
 		}
 		.sideDiv, .sideDiv div {
 			float: left;
@@ -31,7 +32,7 @@
 		img {
 			width: 170px;
 			height: 190px;
-			margin: 30px 35px 10px 35px;
+			margin: 15px 35px 0px 35px;
 			cursor: crosshair;
 		}
 		.centerDiv {
@@ -92,8 +93,8 @@
 							visibility: visible;
 							opacity: 1;
 		}
-		#description p {
-			text-align: justify;
+		#description {
+			margin-top: 10px;
 		}
 		.personalSkills article {
 			font-size: 12px;
@@ -146,21 +147,22 @@
 		.centerDiv h4 i:hover{
 			color: black;
 		}
-		#education a {
+		#education a, #work a {
 			border: none;
 		}
-		#marksheet0, #marksheet1, #marksheet2 {
+		#marksheet, #marksheet0, #marksheet1, #marksheet2, #marksheet3, #marksheet4, #marksheet5, #marksheet6, #marksheet7 {
 			left: -40px;
-			width: 200px;
+			width: 210px;
 			font-family: "Lucida Sans Unicode", "Lucida Console";
 			font-style: normal;
+			text-align: center;
 		}
 		.centerDiv span {
 			float: right;
 			font-size: 14px;
 			font-style: italic;
 		}
-		#work a {
+		#work .company {
 			clear: both;
 			float: left;
 			margin-bottom: 5px;
@@ -168,7 +170,7 @@
 			color: #2E9CB2;
 			transition: all 1s;
 		}
-		#work a:hover {
+		#work .company:hover {
 			border-bottom: 1px solid black;
 		}
 		.centerDiv span i {
@@ -179,6 +181,7 @@
 			}
 		.last {
 			display: inline-block;
+			float: left;
 			background-color: #E7E6E6;
 			text-align: center;
 			padding: 5px;
@@ -193,11 +196,12 @@
 			float: right;
 			display: inline-block;
 			padding: 5px;
-			margin-top: -10px;
-			width: 25px;
+			margin-top: 80px;
+			width: 105px;
 			padding: 0;
 		}
 		#changeColor div {
+			display: inline-block;
 			width: 20px;
 			height: 15px;
 			margin-bottom: 4px;
@@ -212,14 +216,14 @@
 	</style>
 </head>
 <body>
-		<div class="mainDiv">
+	<div class="mainDiv">
 		<div class="sideDiv">
 			<div id="person">
 			<img src="http://i65.tinypic.com/ix49d3.jpg" alt="Manoj_Image"/>
 			<p> Name: Manoj Shrestha </p>
 			<p> Age: <span id="age"> </span> years, <i class="fa fa-mars fa-lg"></i></p>
-			<p> <i class="fa fa-home fa-lg"></i> Kalanki, Kathmandu </p>
-			<p>	<i class="fa fa-phone-square fa-lg"></i> +9779818079566 </p>
+			<p> <i class="fa fa-home fa-lg"></i> Unit 3 152 Gillies St <br/> Fairfield VIC Australia 3078 </p>
+			<p>	<i class="fa fa-phone-square fa-lg"></i> 0433920686 </p>
 			<p>	<i class="fa fa-envelope fa-lg"></i>
 				<a href="mailto:jomanozgml@gmail.com" target="_blank"> jomanozgml@gmail.com 
 				<span class="tooltip"> Click to Send Mail </span></a></p>
@@ -228,35 +232,52 @@
 				<a href="https://www.linkedin.com/in/manoj-shrestha1237" target="_blank">
 					linkedin.com/in/manoj-shrestha1237
 					<span class="tooltip" style="width:150px;"> Click to view profile </span></a>
-			</p><br/>
+			</p>
 			</div>
 			<div id="description">
-				<p class="topic" style="text-align: center;"> ABOUT ME </p>
-				<p> Honest, Responsible, Dynamic, Loyal are some of the traits
-				that defines me. I am 
-				passionate about programming. I am more of a pessimist than a 
-				optimist but in a positive way. I believe in smart-working rather than hard-working. 
-				</p><br/>
+				<p class="topic" style="text-align: center;"> AVAILABILITY </p>
+				<p> # Available for 20 hours per week <br/>
+					# Work shifts can be arranged for both weekdays and weekends </p>
 			</div>
 			<div class="personalSkills">
 				<p class="topic skills" style="font-size: 14px"> SKILLS </p>
-				<p style="font-size:14px; font-weight: bold;"> PERSONAL </p>
-				<article class="7"><span> Communication </span></article>
+				<!--<p style="font-size:14px; font-weight: bold;"> PERSONAL </p>-->
+				<article class="8"><span> Communication </span></article>
 				<article class="6"><span> Humour </span></article>
-				<article class="6"><span> Creativity </span></article>
-				<article class="8"><span> Problem Solving </span></article>
-				<article class="8"><span> Pressure Handling </span></article>
+				<article class="7"><span> Creativity </span></article>
+				<article class="9"><span> Problem Solving </span></article>
+				<article class="9"><span> Pressure Handling </span></article>
 				<article class="8"><span> Team Player </span></article>
-				<article class="5"><span> Social </span></article>
-				<p style="font-size:14px; font-weight: bold;"> WORK </p>
+				<article class="6"><span> Social </span></article>
+				<!--<p style="font-size:14px; font-weight: bold;"> WORK </p>-->
 				<article class="6"><span> C,C++ </span></article>
 				<article class="8"><span> HTML, CSS </span></article>
 				<article class="7"><span> JavaScript </span></article>
 				<article class="6"><span> Python </span></article>
-				<article class="5"><span> SQL </span></article>
-				<article class="7"><span> MS Word </span></article>
-				<article class="6"><span> MS Excel </span></article>
+				<article class="8"><span> MS Word/Excel </span></article>
 				<article class="6"><span> Photoshop </span></article>
+			</div><br/>
+			<div id="reference">
+				<p class="topic"> References </p>
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference<!--: <strong> Australian Citizen </strong>--></i>
+						<i> Name: Shrijana Tuladhar </i>
+						<i> Contact No.: 0433353493 </i>
+				</p>
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> NANC </strong></i>
+						<i> Name: Biswombhar Pradhan </i>
+						<i> Position: Chief Account Officer </i>
+						<i> E: bishu.pradhan@nepaladarsha.com.np </i>
+						<i> Contact No.: +9779801070100 </i>
+				</p>
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> KEC </strong></i>
+						<i> Name: Sudeep Shakya </i>
+						<i> Position: Lecturer, BE Computer </i>
+						<i> Email: sudeep.shakya@keckist.edu.np </i>
+						<i> Contact No.: +9779851036634 </i>
+				</p>
 			</div>
 		</div>
 		<div class="centerDiv">
@@ -264,106 +285,110 @@
 			<h1> Manoj Shrestha </h1>
 			</div>
 			<div id="objDiv">
-			<p class="topic"> CAREER OBJECTIVE </p>
-			<p> To utilize my skills to achieve the goal of the organization while learning new skills and applying them in the field of information technology. </p>
+			<p class="topic"> OBJECTIVE </p>
+			<p> I have positive attitude towards the every job I am entitled to and have been giving my best to it. 
+			I have done manual labor job as paper delivery boy for 2 years and office desk job as IT admin for 1.5 years so I can do both 
+			hard work and smart work simultaneously or one at a time which ever is preferred by the organization. I had experience of working 
+			under pressure and meeting deadlines, therefore I am confidient that I can handle such situations.
+			</p>
 			</div>
 			<div id="education">
 			<p class="topic"> EDUCATION </p>
-			<h4> Bachelor in Computer Engineering [70%] <a href="https://www.dropbox.com/s/ekp8b4v05z6ztor/Manoj_BE_Transcript.pdf?dl=1" target="_blank">
+			<h4> Master of Information Technology <a href="https://www.dropbox.com/s/rw882aln7s47rtv/Manoj_SHRESTHA_-_2494491_CSUCoECertificate%5B1%5D.pdf?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet">
+				Click to download COE </span></i></a></h4>
+			<span> Enrolled on Feb 2019 </span>
+			<ul>
+			<li> Charles Sturt University Study Center, Melbourne, Australia </li>
+			</ul>
+			<h4> Bachelor in Computer Engineering [70%] <a href="https://www.dropbox.com/s/eaw39vwqz41h742/ShresthaManoj_BE_Transcript.pdf?dl=1" target="_blank">
 				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet0">
 				Click to download Marksheet </span></i></a></h4>
 			<span> 2012-2017 </span>
 			<ul>
-			<li> Kathmandu Engineering College (TU Affiliated), Kalimati, Kathmandu </li>
-			<!--<li> Aggregate Exam's score : 70% </li>-->	
+			<li> Kathmandu Engineering College (TU Affiliated), Kathmandu, Nepal </li>
 			</ul>
-			<h4> +2 in Science [67%] <a href="https://www.dropbox.com/s/aenktj0w6n7fpgv/plusTwo.jpg?dl=1" target="_blank">
+			<h4> +2 in Science (High School) [67%] <a href="https://www.dropbox.com/s/5c8ni9pxeji33vx/Shrestha_Manoj_IntermediateCertificate_JubilantCollege.pdf?dl=1" target="_blank">
 				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet1">
 				Click to download Marksheet </span></i></a></h4>
 			<span> 2008-2010 </span>
 			<ul>
-			<li> Prajjwal H.S. School (HSEB), Kalimati, Kathmandu </li>
-			<!--<li> Aggregate Exam's score : 67% </li>-->	
+			<li> Prajjwal H.S. School (HSEB), Kathmandu, Nepal </li>
 			</ul>
-			<h4> School Leaving Certificate (SLC) [77%] <a href="https://www.dropbox.com/s/x7bpxgorfh1ozyx/slc.jpg?dl=1" target="_blank">
+			<h4> School Leaving Certificate (SLC) [77%] <a href="https://www.dropbox.com/s/sx3hvqys9c2fvaa/ShresthaManoj_SLC.pdf?dl=1" target="_blank">
 				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet2">
 				Click to download Marksheet </span></i></a></h4>
 			<span> 1998-2008 </span>
 			<ul>
-			<li> Paropakar Adarsha H.S.S., Bhimsensthan, Kathmandu </li>
-			<!--<li> Aggregate Exam's score : 77% </li>-->	
+			<li> Paropakar Adarsha H.S.S., Kathmandu, Nepal </li>
 			</ul>
+			</div>
 			<div id="work">
-			<p class="topic"> EXPERIENCE </p>
-			<h4> IT Administrator </h4><span> Sep 2017 onwards </span>
-			<a href="http://www.nepaladarsha.com/" target="_blank" class="color1"> Nepal Adarsha Nirman Company Pvt. Ltd.
+			<p class="topic"> EXPERIENCE AND TRAINING </p>
+			<h4> IT Administrator <a href="https://www.dropbox.com/s/ri2oy885ipkchu0/Manoj_Shrestha_NANC.jpg?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet3">
+				Click to download Certificate </span></i></a></h4>
+			<span> Sep 2017- Feb 2019 </span>
+			<a href="http://www.nepaladarsha.com/" target="_blank" class="company color1"> Nepal Adarsha Nirman Company Pvt. Ltd.
 					<span class="tooltip" style="width:280px;">
 						<i style="text-decoration: underline"> Reference:</i>
 						<i> Name: Biswombhar Pradhan </i>
 						<i> Position: Chief Account Officer </i>
-						<i> Contact No.: 9801170100, 014278625 </i></span>
+						<i> Contact No.: +9779801170100 </i></span>
 			</a>
 			<ul>
 			<li> Responsibilities include troubleshooting software, hardware and network related issues along with development of desktop based application. </li>		
 			</ul>
+			<h4> Operation In-charge <a href="https://www.dropbox.com/s/428oo1zml9a04xh/Manoj_Shrestha_MoonStar.jpg?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet4">
+				Click to download Certificate </span></i></a></h4><span> Jan 2017- Feb 2019 </span>
+			<a href="http://www.moonstar.com.np/" target="_blank" class="company color1"> MoonStar Tailors
+					<span class="tooltip" style="width:280px;">
+						<i style="text-decoration: underline"> Reference:</i>
+						<i> Name: Shiva Kumari Shrestha </i>
+						<i> Position: Proprietor </i>
+						<i> Contact No.: +9779818921713 </i></span>
+			</a>
+			<ul>
+			<li> I was responsible for acquitision of tailoring materials, design of clothes, meeting up with suppliers and clients
+			along with day to day company works using efficient technical skills.</li>		
+			</ul>
 			<h4> Newspaper Job Posting Representative </h4><span> Aug 2015- Feb 2016 </span>
-			<a href="http://www.merojob.com" target="_blank" class="color1"> meroJob Dot Com Pvt. Ltd.
+			<a href="http://www.merojob.com" target="_blank" class=" company color1"> meroJob Dot Com Pvt. Ltd.
 					<span class="tooltip" style="width:280px;">
 						<i style="text-decoration: underline"> Reference:</i>
 						<i> Name: Rajesh Shrestha </i>
 						<i> Position: Senior IT Executive </i>
-						<i> Contact No.: 9801038993, 014106702 </i></span>
+						<i> Contact No.: +9779801038993 </i></span>
 			</a>
 			<ul>
 			<li> This job required me to publish job vacancy published in Newspapers to the website [merojob.com]. I learned about unicode Nepali typing, Optical Character Recognition and team-work. </li>		
 			</ul>
-			<h4> Hawker [cycle boy] </h4><span> Aug 2010- Oct 2012 </span>
-			<a href="http://www.kmg.com.np/" target="_blank" class="color1"> Kantipur Publications Pvt. Ltd.
-					<span class="tooltip">
+			<h4> Hawker [cycle boy] <a href="https://www.dropbox.com/s/st28mvliktayhtq/Kantipur_Publications_Work%20experience%20certificate.jpg?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet5">
+				Click to download Certificate </span></i></a></h4><span> Aug 2010- Oct 2012 </span>
+			<a href="http://www.kmg.com.np" target="_blank" class="company color1"> Kantipur Publications Pvt. Ltd.
+					<span class="tooltip" style="width:280px;">
 						<i style="text-decoration: underline"> Reference:</i>
 						<i> Name: Purna Shrestha </i>
 						<i> Position: Distribution Incharge-Kalanki </i>
-						<i> Contact No.: 9841309990 </i></span>
+						<i> Contact No.: +9779841309990 </i></span>
 			</a>
 			<ul>
 			<li> Job was to deliver newspapers at subscribers home at morning. From this I learned about hard-work, client relationship and responsibility.  </li>		
 			</ul>
+			<h4> Basic Electrical House Wiring Training <a href="https://www.dropbox.com/s/bmtahc1kjowbcxs/HouseWiring_Certificate.pdf?dl=1" target="_blank">
+				<i class="fa fa-paperclip fa-lg"><span class="tooltip" id="marksheet6">
+				Click to download Certificate </span></i></a></h4><span> Jan 2012- July 2012 </span>
+			<a href="http://training.gov.np/" target="_blank" class="company color1"> Vocational and Skill Development Training Center </a>
 			</div>
-			<div id="projects">
-			<p class="topic"> PROJECTS </p>
-			<h4> BAGHCHAL GAME </h4>
-			<ul>
-			<li> This two-player game is for Windows7 OS written using <i> C++ </i> </li>
-			<li> Minor Project during 2nd year of Engineering </li>		
-			</ul>
-			<h4> OCR [Optical Character Recognition] APPLICATION </h4>
-			<ul>
-			<li> OCR application for Windows and Linux OS written using <i> Python 2.7 </i> </li>
-			<li> Recognizes English as well as Nepali script in image file and gives an output in editable text format. Major Project </li>	
-			</ul>
-			</div>
-			<div id="reference">
-				<p class="last" style="width:240px;">
-						<i style="border-bottom: 1px dashed black;"> Reference: <strong> NANC </strong></i>
-						<i> Name: Biswombhar Pradhan </i>
-						<i> Position: Chief Account Officer </i>
-						<i> Contact No.: 9801170100, 014278625 </i>
-				</p>
-				<p class="last" style="width:230px;">
-						<i style="border-bottom: 1px dashed black;"> Reference: <strong> KEC </strong></i>
-						<i> Name: Sudeep Shakya </i>
-						<i> Position: Lecturer, BE Computer </i>
-						<i> Contact No.: 9851036634, 014284902 </i>
-				</p>
-				<div id="changeColor">
-					<div class="colorBox" id="MediumPurple" onclick="colorChange(id)"></div>
-					<div class="colorBox" id="SteelBlue" onclick="colorChange(id)"></div>
-					<div class="colorBox" id="ForestGreen" onclick="colorChange(id)"></div>
-					<div class="colorBox" id="IndianRed" onclick="colorChange(id)"></div>
-				</div>
-			</div>
-			
-		</div>		
+		</div>
+		<div id="changeColor">
+			<div class="colorBox" id="MediumPurple" onclick="colorChange(id)"></div>
+			<div class="colorBox" id="SteelBlue" onclick="colorChange(id)"></div>
+			<div class="colorBox" id="ForestGreen" onclick="colorChange(id)"></div>
+			<div class="colorBox" id="IndianRed" onclick="colorChange(id)"></div>
+		</div>
 	</div>
 	<script>
 		(function (){
@@ -403,6 +428,10 @@
 			var y = document.getElementsByClassName("color1");
 			y[0].style.color = colorId;
 			y[1].style.color = colorId;
+			y[2].style.color = colorId;
+			y[3].style.color = colorId;
+			y[4].style.color = colorId;
+			y[5].style.color = colorId;
 			var z = document.getElementsByClassName("color2");
 			var a = [x, z];
 			for (var i=0; i<2; i++){
