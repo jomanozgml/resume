@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Resume: Manoj Shrestha </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			font-family: "Lucida Sans Unicode", "Lucida Console";
+
+		}
+		p {
+			font-size: 14px;
+		}
+		.mainDiv {
+			position: relative;
+			max-width: 800px;
+			height: 1132px;
+			margin: auto;
+			padding: 5px;
+			/*border: 2px solid lightgray;*/
+		}
+		.sideDiv, .sideDiv div {
+			float: left;
+			width: 250px;
+			height: auto;
+		}
+		#person {
+			background-color: #E7E6E6;
+			text-align: center;
+			/* padding-left: 10px; */
+		}
+		img {
+			width: 170px;
+			height: 190px;
+			margin: 15px 35px 0px 35px;
+			cursor: crosshair;
+		}
+		.centerDiv {
+			float: left;
+			width: 535px;
+			height: 1122px;
+			margin-left: 10px;
+		}
+		.centerDiv div {
+			float: left;
+			width: 535px;
+			text-align: justify;
+		}
+		.topic {
+			color: white;
+			font-weight: bold;
+			background-color: #2E9CB2;
+			text-align: center;
+			padding: 5px;
+			margin-top:0;
+			transition: all 1s;
+		}
+		h1 {
+			text-align: center;
+			margin: 3px 0 3px 0;
+		}
+		a {
+			position: relative;
+			text-decoration: none;
+			color: black;
+			border-bottom: 1px solid lightgray;
+			transition: all 1s;
+		}
+		a:hover {
+				border-bottom: 1px solid black;
+		}
+		.tooltip {
+					position: absolute;
+					visibility: hidden;
+					width: auto;
+					bottom: 120%;
+					left: 5%;
+					padding: 5px;
+					background-color: black;
+					color: white;
+					border-radius: 5px;
+					opacity: 0;
+					transition: opacity 1s;
+		}
+		.tooltip::before {
+			position: absolute;
+			top: 100%;
+			left: 25%;
+			content: "";
+			border: 5px solid transparent;
+			border-top: 5px solid black;
+		}
+		a:hover .tooltip {
+							visibility: visible;
+							opacity: 1;
+		}
+		#description {
+			margin-top: 10px;
+		}
+		.personalSkills article {
+			font-size: 12px;
+			line-height: 1.6;
+
+		}
+		.personalSkills span{
+			display: inline-block;
+			width: 110px;
+		}
+		.personalSkills i {
+			display: inline-block;
+			width: 10px;
+			height: 13px;
+			margin-right: 2px;
+			background-color: #2E9CB2;
+			transition: all 0.5s;
+		}
+		.personalSkills em {
+			display: inline-block;
+			width: 10px;
+			height: 13px;
+			margin-right: 2px;
+			background-color: lightgray;
+			transition: all 0.5s;
+		}
+		.personalSkills em:hover {
+			background-color: #2E9CB2;
+		}
+		ul {
+			list-style-type: none;
+			font-size: 14px;
+			list-style-position: inside;
+			margin-left: -20px;
+			line-height: 1.6;
+			clear: both;
+		}
+		#reference {
+			margin-top: 10px;
+		}
+		#reference .last {
+			margin-top: 1px;
+		}
+		.centerDiv h4 {
+			display: inline;
+			float: left;
+			margin-top: 2px;
+			margin-bottom: 2px;
+		}
+		.centerDiv h4 i{
+			margin-left: 10px;
+			color: gray;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		.centerDiv h4 i:hover{
+			color: black;
+		}
+		#education a, #work a {
+			border: none;
+		}
+		#marksheet, #marksheet0, #marksheet1, #marksheet2, #marksheet3, #marksheet4, #marksheet5, #marksheet6, #marksheet7 {
+			left: -40px;
+			width: 210px;
+			font-family: "Lucida Sans Unicode", "Lucida Console";
+			font-style: normal;
+			text-align: center;
+		}
+		.centerDiv span {
+			float: right;
+			font-size: 14px;
+			font-style: italic;
+		}
+		#work .company {
+			clear: both;
+			float: left;
+			margin-bottom: 5px;
+			border-bottom: 1px solid lightgray;
+			color: #2E9CB2;
+			transition: all 1s;
+		}
+		#work .company:hover {
+			border-bottom: 1px solid black;
+		}
+		.centerDiv span i {
+			display: block;
+			margin: 5px;
+			text-align: center;
+			font-style: normal;
+			}
+		.last {
+			display: inline-block;
+			float: left;
+			background-color: #E7E6E6;
+			text-align: center;
+			padding: 5px;
+			margin-top: -10px;
+		}
+		.last i {
+			display: block;
+			font-size: 12px;
+			font-style: normal;
+		}
+		#changeColor {
+			float: right;
+			display: inline-block;
+			padding: 0px;
+			margin-top: 0px;
+			width: 105px;
+		}
+		#changeColor div {
+			display: inline-block;
+			width: 20px;
+			height: 15px;
+			margin-bottom: 4px;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		#changeColor div:hover{
+			width: 25px;
+			height: 20px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.6), 0 10px 20px rgba(0,0,0,0.3);
+		}
+	</style>
+</head>
+<body>
+	<div class="mainDiv">
+		<div class="sideDiv">
+			<div id="person">
+			<h2><a href="https://jomanozgml.github.io/resume" target="_blank"> RESUME </a></h2>
+			<!--<img src="http://i65.tinypic.com/ix49d3.jpg" alt="Manoj_Image"/>-->
+			<p> Name: Manoj SHRESTHA </p>
+			<p> Age: <span id="age"> </span> years, <i class="fa fa-mars fa-lg"></i></p>
+			<p> <i class="fa fa-home fa-lg"></i> Melbourne, VIC </p>
+			<p>	<i class="fa fa-phone-square fa-lg"></i> <a href="tel:+61433920686" target="_blank"> +61433920686 </a></p>
+			<p>	<i class="fa fa-envelope fa-lg"></i>
+				<a href="mailto:jomanozgml@gmail.com" target="_blank"> manoj.shrestha8080@gmail.com
+				<span class="tooltip"> Click to Send Mail </span></a></p>
+			</p>
+			<p> <i class="fa fa-linkedin-square fa-lg"></i>
+				<a href="https://www.linkedin.com/in/manojshrestha8080" target="_blank">
+					linkedin.com/in/<br/>manojshrestha8080
+					<span class="tooltip" style="width:150px;"> Click to view profile </span></a>
+			</p>
+			<p> <i class="fa fa-github-square fa-lg"></i>
+				<a href="https://github.com/jomanozgml" target="_blank">
+					github.com/jomanozgml
+					<span class="tooltip" style="width:150px;"> Click to view profile </span></a>
+			</p>
+			</div>
+			<div id="description">
+				<p class="topic" style="text-align: center;"> AVAILABILITY </p>
+				<p>
+					# Have Full time work rights <br/>
+					# Available for casual, part time or full time work <br/>
+					# Available weekdays and weekends </p>
+			</div>
+			<div class="personalSkills">
+				<p class="topic skills" style="font-size: 14px"> SKILLS </p>
+				<!--<p style="font-size:14px; font-weight: bold;"> PERSONAL </p>-->
+				<article class="9"><span> Customer Service </span></article>
+				<article class="8"><span> Communication </span></article>
+				<article class="7"><span> English Fluency </span></article>
+				<article class="6"><span> Humour </span></article>
+				<article class="7"><span> Creativity </span></article>
+				<article class="9"><span> Problem Solving </span></article>
+				<article class="9"><span> Pressure Handling </span></article>
+				<article class="9"><span> Team Player </span></article>
+				<!--<p style="font-size:14px; font-weight: bold;"> WORK </p>-->
+				<article class="8"><span> MS Word/Excel </span></article>
+				<article class="6"><span> Photoshop </span></article>
+				<article class="6"><span> C,C++ </span></article>
+				<article class="7"><span> HTML5, CSS3 </span></article>
+				<article class="6"><span> JavaScript/JQuery </span></article>
+				<article class="7"><span> Python </span></article>
+				<article class="7"><span> Flutter </span></article>
+				<article class="6"><span> JAVA </span></article>
+			</div>
+			<div id="reference">
+				<p class="topic"> References </p>
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> Coles Group </strong></i>
+						<i> Available upon request </i>
+				</p>
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> IGA Xpress Plus Liquor </strong></i>
+						<i> Available upon request </i>
+				</p>
+				<p class="last" style="width:240px;">
+						<i style="border-bottom: 1px dashed black;"> Reference: <strong> FoodWorks Southbank </strong></i>
+						<i> Available upon request </i>
+				</p>
+			</div>
+		</div>
+		<div class="centerDiv">
+			<div id="nameDiv"> <h1> Manoj Shrestha </h1></div>
+			<div id="objDiv">
+			<p class="topic"> CAREER PROFILE </p>
+			<p> Master's graduate with 4 years of retail customer service experience and 1.5 years in IT support roles.
+				Currently in Northcote, Melbourne, I am enthusiastic about customer service, software and web development,
+				eager to bring a tech-savvy and customer-centric approach to the retail industry.
+			</p>
+			</div>
+			<div id="work">
+				<p class="topic"> EXPERIENCE AND TRAINING </p>
+				<h4> Team Member </h4>
+				<span> Since Jan 2023 (Current) </span>
+				<a href="https://www.colesgroup.com.au/" target="_blank" class="company color1"> Coles Group, Melbourne	</a>
+				<ul style="list-style-type:square;">
+				<li> Successfully received, processed, and managed inventory stock deliveries and ensured products were
+					placed on the shelves according to the planogram </li>
+				<li> Assisted customers in locating products and answered their inquiries, improving their shopping experience
+					and customer satisfaction </li>
+				<li> Demonstrated strict adherence to safety procedures and protocols, ensuring a safe work environment for myself
+					and colleagues during equipment operation, cleaning, and other tasks </li>
+				</ul>
+				<h4> Store Supervisor </h4>
+				<span> Mar 2019- Oct 2022 (3.5 Years)</span>
+				<a href="http://our-stores.iga.com.au/stores/iga-x-press-lonsdale-street/" target="_blank" class="company color1">
+					IGA Xpress Plus Liquor, Melbourne </a>
+				<ul style="list-style-type:square;">
+					<li> Collaborated in team environment to achieve 25% increase in sales </li>
+					<li> Assisted customer in counter checkouts, finding products </li>
+					<li> Replenished stock efficiently and maintained store standard hygiene, safety </li>
+				</ul>
+				<h4> IT Administrator </h4>
+				<span> Sep 2017- Feb 2019 (1.5 years)</span>
+				<a href="http://www.nepaladarsha.com/" target="_blank" class="company color1"> Nepal Adarsha Nirman Co. Pvt. Ltd. [NANC], Nepal </a>
+				<ul style="list-style-type:square;">
+					<li> Troubleshooted software, hardware, and network related issues </li>
+					<li> Developed desktop-based application using Python </li>
+					<li> Designed webpage using HTML, CSS, JavaScript, jQuery, and WordPress CMS </li>
+					<li> Communicated with site location to resolve IT hardware or software issues </li>
+				</ul>
+
+				<h4 style="clear: both;"> Responsible Service of Alcohol Program Certificate </h4><span> Mar 2022 </span>
+				<h4> Use Hygienic Practices for Food Safety Certificate </h4><span> Mar 2022 </span>
+			</div>
+			<div id="education">
+				<p class="topic"> EDUCATION </p>
+				<h4> Master of Information Technology [6.33] </h4>
+				<span> Feb 2019 - Jan 2021 </span>
+				<ul>
+					<li> Major: Systems Analysis/Software Design and Development </li>
+					<li> Charles Sturt University Study Center, Melbourne, Australia </li>
+				</ul>
+				<h4> Bachelor in Computer Engineering [70%] </h4>
+				<span> 2012-2017 </span>
+				<ul>
+					<li> Kathmandu Engineering College [KEC] (TU Affiliated), Kathmandu, Nepal </li>
+				</ul>
+			</div>
+		</div>
+		<div id="changeColor">
+			<div class="colorBox" id="MediumPurple" onclick="colorChange(id)"></div>
+			<div class="colorBox" id="SteelBlue" onclick="colorChange(id)"></div>
+			<div class="colorBox" id="#125430" onclick="colorChange(id)"></div>
+			<div class="colorBox" id="#E01A22" onclick="colorChange(id)"></div>
+		</div>
+	</div>
+	<script>
+		(function (){
+			var i, j, len, n = 0;
+			var x = document.getElementsByTagName("article");
+			n = x.length;
+			var node;
+			for(i=0; i<n; i++){
+				len = Number(x[i].className);
+				for(j=0; j<len; j++){
+					node = document.createElement("I");
+					node.className = "color2";
+					x[i].appendChild(node);
+				}
+				for(j=len; j<10; j++){
+					node = document.createElement("EM");
+					node.className = "color3";
+					x[i].appendChild(node);
+				}
+			}
+		})();
+		(function(){
+			var x = document.getElementsByClassName("colorBox");
+			var i, n = 0;
+			for(i=0; i<4; i++){
+				var color = x[i].id;
+				x[i].style.backgroundColor = color;
+			}
+			var d = new Date();
+			var bd = new Date(1991, 10, 29);
+			var fd = new Date(d-bd);
+			document.getElementById("age").innerHTML = parseInt(fd/(1000*60*60*24*365));
+		})();
+		function colorChange(colorId){
+			var x = document.getElementsByClassName("topic");
+			var y = document.getElementsByClassName("color1");
+			y[0].style.color = colorId;
+			y[1].style.color = colorId;
+			y[2].style.color = colorId;
+			// y[3].style.color = colorId;
+			var z = document.getElementsByClassName("color2");
+			var a = [x, z];
+			for (var i=0; i<2; i++){
+				var n = a[i].length;
+				for (var j=0; j<n; j++){
+					a[i][j].style.backgroundColor = colorId;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
