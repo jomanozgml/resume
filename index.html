@@ -15,7 +15,7 @@
 		.mainDiv {
 			position: relative;
 			max-width: 800px;
-			height: 1132px;
+			height: 1100px;
 			margin: auto;
 			padding: 5px;
 			/*border: 2px solid lightgray;*/
@@ -39,7 +39,7 @@
 		.centerDiv {
 			float: left;
 			width: 535px;
-			height: 1122px;
+			height: auto;
 			margin-left: 10px;
 		}
 		.centerDiv div {
@@ -204,7 +204,6 @@
 			float: right;
 			display: inline-block;
 			padding: 0px;
-			margin-top: 0px;
 			width: 105px;
 		}
 		#changeColor div {
@@ -227,7 +226,6 @@
 		<div class="sideDiv">
 			<div id="person">
 			<h2><a href="https://jomanozgml.github.io/resume" target="_blank"> RESUME </a></h2>
-			<!--<img src="http://i65.tinypic.com/ix49d3.jpg" alt="Manoj_Image"/>-->
 			<p> Name: Manoj SHRESTHA </p>
 			<p> Age: <span id="age"> </span> years, <i class="fa fa-mars fa-lg"></i></p>
 			<p> <i class="fa fa-home fa-lg"></i> Melbourne, VIC </p>
@@ -320,7 +318,7 @@
 				<ul style="list-style-type:square;">
 					<li> Collaborated in team environment to achieve 25% increase in sales </li>
 					<li> Assisted customer in counter checkouts, finding products </li>
-					<li> Replenished stock efficiently and maintained store standard hygiene, safety </li>
+					<li> Replenished stock efficiently and maintained store hygiene, safety </li>
 				</ul>
 				<h4> IT Administrator </h4>
 				<span> Sep 2017- Feb 2019 (1.5 years)</span>
@@ -328,8 +326,8 @@
 				<ul style="list-style-type:square;">
 					<li> Troubleshooted software, hardware, and network related issues </li>
 					<li> Developed desktop-based application using Python </li>
-					<li> Designed webpage using HTML, CSS, JavaScript, jQuery, and WordPress CMS </li>
-					<li> Communicated with site location to resolve IT hardware or software issues </li>
+					<li> Designed webpage using HTML, CSS, JavaScript, jQuery, and WordPress </li>
+					<li> Communicated with site teams to resolve IT hardware & software issues </li>
 				</ul>
 
 				<h4 style="clear: both;"> Responsible Service of Alcohol Program Certificate </h4><span> Mar 2022 </span>
@@ -385,7 +383,7 @@
 				x[i].style.backgroundColor = color;
 			}
 			var d = new Date();
-			var bd = new Date(1991, 10, 29);
+			var bd = new Date(1991, 10, 29); // Not Actual DOB
 			var fd = new Date(d-bd);
 			document.getElementById("age").innerHTML = parseInt(fd/(1000*60*60*24*365));
 		})();
